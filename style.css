@@ -1,0 +1,17 @@
+body{
+    background-color:black;
+    color: white;
+}
+h1{
+    font-size: 50px;
+    color: red;
+}
+.liRojo{
+    color: purple;
+}
+#ultima{
+    color: white;
+}
+.tamaniogrande{
+    font-size: 50px;
+}
