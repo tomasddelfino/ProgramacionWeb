@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    min-height: 100vh; 
+    position: relative; 
+}
+header {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: white; /* Color del texto */
+    position: fixed; /* Fija el encabezado en la parte superior */
+    width: 100%;
+    top: 0; /* Fija el encabezado en la parte superior */
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Asegura que el encabezado esté encima de otros elementos */
+    margin-top: 0; /* Elimina el margen superior */
+}
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.logo img {
+    height: 50px; /* Tamaño del logo */
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.menu-desplegable {
+    display: none; /* Oculta el menú desplegable por defecto */
+    position: absolute; /* Fija el menú desplegable */
+    background-color: #333;
+    width: 100%;
+}
+.menu-desplegable ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+}
+.menu-desplegable ul li {
+    padding: 15px 0;
+}
+.menu-desplegable ul li a {
+    color: white;
+    text-decoration: none;
+}
+.contenido-principal {
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px; /* Ajusta el margen superior para que no se superponga con el encabezado */
+    background-color: #fff;
+    padding-bottom: 80px;
+}
+.contenido-principal h2 {
+    color: #333; /* Color del texto principal */
+}
+.contenido-principal p {
+    color: #666; /* Color del texto secundario */
+}
+
+/* A partir de acá está el apartado de contactos*/
+
+.seccion-contacto {
+    padding: 20px;
+    margin-top: 20px;
+}
+.seccion-contacto h2 {
+    color: #333;
+}
+.seccion-contacto .subtitulo {
+    color: #666;
+    margin-top: 10px;
+}
+.seccion-contacto .subtitulo h3 {
+    margin-bottom: 5px;
+    display: block; /* Hace que los títulos h3 ocupen una línea completa */
+}
+.seccion-contacto .emoticon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contacto{
+    border-bottom: 2px solid #fff;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    height: 50px;
+}
