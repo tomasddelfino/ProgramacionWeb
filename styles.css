@@ -14,7 +14,7 @@ main, .container-home, .contenedor-tienda{
 
 /* Estilos para el encabezado */
 header {
-    background-color: black;
+    background-color: #222;
 }
 
 .navbar-brand img {
@@ -33,38 +33,27 @@ header {
     text-decoration: none; /* Elimina el subrayado predeterminado */
 }
 
-/* Estilos para la sección de productos */
-.productos {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px; /* Ajusta el margen superior para que no se superponga con el encabezado */
+.cart-icon {
+    margin-left: auto;
+    max-width: 70px;
+    max-height: 70px;
+    
 }
 
-.producto {
-    text-align: center;
-}
+@media (max-width: 991px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-.producto img {
-    max-width: 100%; /* Ajustar imágenes al ancho del contenedor */
-}
+    .navbar-nav .nav-link {
+        padding: 0.5rem 1rem;
+    }
 
-.boton-compra {
-    display: block;
-    margin-top: 10px;
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.boton-compra:hover {
-    background-color: #0056b3;
-}
-
-.producto a{
-    vertical-align: middle;
+    .navbar-nav .cart-icon {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
 }
 
 /* Estilos para el footer */
@@ -73,6 +62,7 @@ footer {
     color: #fff;
     position: relative;
     width: 100%;
+    bottom: 0;
 }
 
 footer .footer {
@@ -94,6 +84,7 @@ footer p {
 /* Estilos para el contenido principal */
 .contenido-principal {
     padding-top: 150px;
+    padding-bottom: 50px;
     text-align: center;
     background-color: #fff;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -103,22 +94,43 @@ footer p {
 .contenedor-tienda {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    background-color: #fff;
-    padding-top: 100px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: space-between;
+    margin: 2rem;
+    padding-top: 80px;
 }
 
 .producto {
-    flex: 0 0 45%; /* Cada producto ocupa el 45% del contenedor */
-    max-width: 300px;
-    margin: 10px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(33.333% - 2rem);
+    margin-bottom: 2rem;
+}
+
+.producto:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
 }
 
 .producto img {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.producto h3 {
+    margin: 1rem 0;
+}
+
+.boton-compra {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.boton-compra:hover {
+    background-color: #0056b3;
 }
 
 @media only screen and (max-width: 768px) {
@@ -129,6 +141,7 @@ footer p {
 
     .producto {
         flex: 0 0 90%; /* Cada producto ocupa el 90% del contenedor en pantallas pequeñas */
+        width: 100%;
     }
 }
 

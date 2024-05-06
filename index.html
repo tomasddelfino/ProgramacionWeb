@@ -28,37 +28,55 @@
                     <a class="nav-link" href="contacto.html">Contacto</a>
                 </li>
             </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <button class="nav-link cart-button dropdown-toggle" id="toggle-cart" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Carrito<span class="cart-count"></span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="toggle-cart">
+                        <!-- Aquí puede agregar los elementos del menú desplegable -->
+                        <div class="cart-dropdown" id="cart-dropdown">
+                            <div class="cart-items">
+                            <!-- Aquí van los elementos del carrito -->
+                            </div>
+                            <div class="cart-total">
+                            <!-- Aquí va el total del carrito -->
+                            </div>
+                            <button class="checkout-button">Realizar pedido</button>
+                            <button class="empty-cart-button">Vaciar carrito</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </header>
-<div class="container-home">
-    <div class="contenido-principal">
-        <h2>Bienvenido a Aires Fitters, tu marca de ropa de CONFIANZA.</h2>
-        <p>Descubre las últimas tendencias en moda urbana.</p>
-        <p class="text-center">Explora nuestro catálogo y mejora tu estilo.</p>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="producto">
-                    <img src="jean azul.jpg" alt="Producto 1" class="img-fluid">
-                    <div class="d-flex align-items-center justify-content-center">
-                        <a href="tienda.html" class="btn btn-primary mt-2" style="width: 100%; height: 100%;">Ver la tienda</a>
-                    </div>
+<div class="contenido-principal">
+    <h2>Bienvenido a Aires Fitters, tu marca de ropa de CONFIANZA.</h2>
+    <p>Descubre las últimas tendencias en moda urbana.</p>
+    <p class="text-center">Explora nuestro catálogo y mejora tu estilo.</p>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="producto-inicio">
+                <img src="jean azul.jpg" alt="Producto 1" class="img-fluid">
+                <div class="d-flex align-items-center justify-content-center">
+                    <a href="tienda.html" class="btn btn-primary mt-2" style="width: 100%; height: 100%;">Ver la tienda</a>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="producto">
-                    <img src="campera_nike.jpg" alt="Producto 2" class="img-fluid">
-                    <div class="d-flex align-items-center justify-content-center">
-                        <a href="tienda.html" class="btn btn-primary mt-2" style="width: 100%; height: 100%;">Ver la tienda</a>
-                    </div>
+        </div>
+        <div class="col-md-4">
+            <div class="producto-inicio">
+                <img src="campera_nike.jpg" alt="Producto 2" class="img-fluid">
+                <div class="d-flex align-items-center justify-content-center">
+                    <a href="tienda.html" class="btn btn-primary mt-2" style="width: 100%; height: 100%;">Ver la tienda</a>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="producto">
-                    <img src="remera_negra.jpg" alt="Producto 3" class="img-fluid">
-                    <div class="d-flex align-items-center justify-content-center">
-                        <a href="tienda.html" class="btn btn-primary mt-2" style="width: 100%; height: 100%;">Ver la tienda</a>
-                    </div>
+        </div>
+        <div class="col-md-4">
+            <div class="producto-inicio">
+                <img src="remera_negra.jpg" alt="Producto 3" class="img-fluid">
+                <div class="d-flex align-items-center justify-content-center">
+                    <a href="tienda.html" class="btn btn-primary mt-2" style="width: 100%; height: 100%;">Ver la tienda</a>
                 </div>
             </div>
         </div>
@@ -70,5 +88,6 @@
     </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
